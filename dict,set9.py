@@ -16,9 +16,11 @@ for i in x:
 print('[2] 전체 대출된 책 목록 (중복 제거):','\n',c,'\n')
 d=[len(value) for key,value in a.items()]
 e=max(d)
+l=[]
 for key,value in a.items():
     if len(value)==e:
-        print('[3] 가장 많이 대출한 사람:','\n',[key],'\n')
+        l.append(key)
+print('[3] 가장 많이 대출한 사람:','\n',[l],'\n')
 f=[]
 for key,value in a.items():
     if len(value)>=3:
